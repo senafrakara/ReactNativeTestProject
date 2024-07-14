@@ -5,7 +5,7 @@ interface Props {
   value: any;
 }
 
-const Home = React.memo((props: Props) => {
+const UseMemoExample1 = React.memo((props: Props) => {
   const memorizedDifference = useMemo(() => {
     return 3 * props.value;
   }, [props.value]);
@@ -21,4 +21,4 @@ const Home = React.memo((props: Props) => {
   );
 });
 
-export default Home;
+export default UseMemoExample1;
